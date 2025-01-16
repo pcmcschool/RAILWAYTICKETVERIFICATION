@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Ticket Verification</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="model/model.json"></script> <!-- Add your Teachable Machine model -->
+</head>
+<body>
+  <h1>Railway Ticket Verification</h1>
+  <div>
+    <video id="webcam" autoplay playsinline width="400" height="300"></video>
+    <button id="start">Start Verification</button>
+    <p id="status">Status: Waiting for input...</p>
+  </div>
+  <div>
+    <label for="idInput">Enter Your ID:</label>
+    <input type="text" id="idInput" placeholder="Enter ID">
+    <button id="verify">Verify ID</button>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
